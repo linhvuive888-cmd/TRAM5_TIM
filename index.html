@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạm Đích: Bản Lĩnh Thanh Niên</title>
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --accent-yellow: #ffeb3b;
+            --glass: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b2239;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+        }
+
+        .game-container {
+            width: 100%; max-width: 450px; height: 95vh;
+            background: linear-gradient(rgba(11, 34, 57, 0.8), rgba(11, 34, 57, 0.8)), 
+                        url('https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover; background-position: center;
+            position: relative; border-radius: 20px; overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            display: flex; flex-direction: column; color: white;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .header { text-align: center; padding: 30px 20px 10px; }
+        
+        .station-title {
+            color: var(--accent-yellow); 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        .content-section {
+            padding: 10px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .requirement-box {
+            background: var(--glass);
+            color: #2c3e50;
+            padding: 18px;
+            border-radius: 15px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            border-top: 5px solid var(--primary-blue);
+        }
+
+        .message-card {
+            background: rgba(0, 86, 179, 0.3);
+            padding: 25px 20px;
+            border-radius: 15px;
+            border: 2px dashed var(--accent-yellow);
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .blank-box {
+            display: inline-block;
+            min-width: 50px;
+            height: 30px;
+            background: var(--accent-yellow);
+            color: #000;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 0 8px;
+            margin: 0 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            vertical-align: middle;
+            line-height: 30px;
+        }
+
+        .footer-note { 
+            padding: 20px; text-align: center; font-size: 0.8rem; 
+            opacity: 0.8; background: rgba(0,0,0,0.4);
+        }
+
+        .final-icon {
+            font-size: 3.5rem;
+            display: block;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 10px var(--accent-yellow));
+        }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header">
+        <span class="final-icon">🏆</span>
+        <h1 style="margin:0; font-size: 1.8rem;">MẬT THƯ ❤</h1>
+        <p class="station-title">TRẠM ĐÍCH: BẢN LĨNH THANH NIÊN<br>“THÔNG ĐIỆP 4T” (20 điểm)</p>
+    </div>
+
+    <div class="content-section">
+        <div class="requirement-box">
+            <b>Yêu cầu:</b> Đội chơi hãy ghép <b>4 manh mối</b> thu thập được từ 4 trạm trước đó vào vị trí thích hợp để hoàn thiện Thông điệp dưới đây. Nhập câu hoàn chỉnh lên <b>App hệ thống</b> để về đích!
+        </div>
+
+        <div class="message-card">
+            "Khi <span class="blank-box">[1]</span> được tiếp nối bằng 
+            <span class="blank-box">[2]</span> và <span class="blank-box">[3]</span>, 
+            <span class="blank-box">[4]</span> không chỉ là ký ức, mà trở thành động lực để tuổi trẻ sống có lý tưởng, trách nhiệm và khát vọng cống hiến."
+        </div>
+    </div>
+
+    <div class="footer-note">
+        Đoàn trường THPT Đakrông - Khơi nguồn giấc mơ số <br>
+        <span style="font-size: 0.7rem; font-style: italic; color: var(--accent-yellow);">Chúc mừng các bạn đã hoàn thành thử thách!</span>
+    </div>
+</div>
+
+</body>
+</html>
